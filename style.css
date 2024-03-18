@@ -5,9 +5,7 @@
 
 body {
     display: flex;
-    /* flex: 1; */
     height: 100%;
-    /* background: linear-gradient(90deg, #D3D3D3 54%, #00FFFF 55%); */
 }
 
 header {
@@ -34,7 +32,7 @@ header {
 }
 
 .theme {
-    border:2px #304352 solid;
+    border:2px #82D3FE solid;
     border-radius: 10px;
     background-color: gray;
     width: 100px;
@@ -50,7 +48,7 @@ header {
 .title1 {
     display: flex;
     text-align: center;
-    color: #4a6e8a;
+    color: #82D3FE;
     margin-top: 50px;
 }
 
@@ -63,12 +61,14 @@ header {
 }
 
 .imgdev {
-    width: 150px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 50%;
 }
 
 .imgdev-container p {
     color: #D3D3D3;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .info {
@@ -86,8 +86,130 @@ header {
 
 .info a:hover{
     text-decoration: underline;
-    color: #4a6e8a;
+    color: #82D3FE;
     
+}
+
+main {
+    /* background: linear-gradient(90deg, #d7d2cc 17%, #304352 17%); */
+    background-image: url(./images/Carte\ mère.jpg);
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7 );
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.title2 h2 {
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.text-container p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7 );
+    border-radius: 10%;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.skill h3 {
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.all-skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.skill-html img {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+.skill-html img:hover {
+    transform: translateY(-15px);
+}
+
+.skill-css img {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+.skill-css img:hover {
+    transform: translateY(-15px);
+}
+
+.skill-js img {
+    width: 150px;
+}
+
+.skill-js img:hover {
+    transform: translateY(-15px);
+}
+
+.skill-github img {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px;
+}
+
+.skill-github img:hover {
+    transform: translateY(-15px);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-text p{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .icone-container {
@@ -123,100 +245,6 @@ header {
     width: 40px;
     height: 40px;
 }
-main {
-    /* background: linear-gradient(90deg, 	white 38%, #00FFFF 38%); */
-    /* /* background: linear-gradient(90deg, #FFFDE4 13%, #00FFFF 83%); */
-    background: linear-gradient(90deg, #d7d2cc 17%, #304352 17%);
-}
-
-.title2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    margin-left: 15%;
-}
-
-.title2 h2 {
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.text-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 50px;
-    margin-left: 15%;
-}
-
-.text-container p {
-    color: white;
-    font-size: 1.2rem;
-}
-
-.skill {
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-}
-
-.skill h3 {
-    color: white;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-.all-skill {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 150px 50px;
-    margin-left: 20%;
-}
-
-.skill-html img {
-    width: 150px;
-}
-
-.skill-html img:hover {
-    transform: translateY(-15px);
-}
-
-.skill-css img {
-    width: 150px;
-}
-
-.skill-css img:hover {
-    transform: translateY(-15px);
-}
-
-.skill-js img {
-    width: 150px;
-}
-
-.skill-js img:hover {
-    transform: translateY(-15px);
-}
-
-.skill-github img {
-    width: 150px;
-}
-
-.skill-github img:hover {
-    transform: translateY(-15px);
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
-}
-
 .dark {
     background: linear-gradient(90deg, 	white 38%, #00FFFF 38%);
 }
