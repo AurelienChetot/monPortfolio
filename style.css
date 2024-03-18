@@ -11,7 +11,7 @@ body {
 header {
     background-color: black;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     min-height: 100vh;
 }
 
@@ -34,7 +34,7 @@ header {
 .theme {
     border:2px #82D3FE solid;
     border-radius: 10px;
-    background-color: gray;
+    background-color: black;
     width: 100px;
     color: white;
 }
@@ -42,10 +42,11 @@ header {
 .theme:active {
     border:2px white solid;
     border-radius: 10px;
-    background-color: gray;
+    background-color: grey;
 }
 
 .title1 {
+    font-family: "Quicksand", sans-serif;
     display: flex;
     text-align: center;
     color: #82D3FE;
@@ -64,11 +65,13 @@ header {
     width: 200px;
     margin-left: 10px;
     border-radius: 50%;
+    border: 5px black solid;
 }
 
 .imgdev-container p {
+    font-family: "EB Garamond", serif;
     color: #D3D3D3;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .info {
@@ -79,6 +82,7 @@ header {
 }
 
 .info a{
+    font-family: "EB Garamond", serif;
     text-decoration: none;
     color: white;
     
@@ -91,27 +95,31 @@ header {
 }
 
 main {
-    /* background: linear-gradient(90deg, #d7d2cc 17%, #304352 17%); */
     background-image: url(./images/Carte\ mère.jpg);
 }
 
 .title2 {
+    font-family: "Quicksand", sans-serif;
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7 );
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
 .title2 h2 {
-    color: white;
+    color: #89DEFC;
     border-radius: 50px;
     font-weight: bold;
     text-decoration: underline;
     font-size: 3rem;
     text-align: center;
+}
+
+.color-dev {
+    color: #3B86A2;
 }
 
 .text-container {
@@ -125,6 +133,7 @@ main {
 }
 
 .text-container p {
+    font-family: "EB Garamond", serif;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
@@ -141,7 +150,8 @@ main {
 }
 
 .skill h3 {
-    color: white;
+    font-family: "Quicksand", sans-serif;
+    color: #82D3FE;
     font-size: 2rem;
     text-decoration: underline;
 }
@@ -160,7 +170,7 @@ main {
 }
 
 .skill-html img:hover {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 }
 
 .skill-css img {
@@ -170,25 +180,27 @@ main {
 }
 
 .skill-css img:hover {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 }
 
 .skill-js img {
+    background-color: white;
+    border-radius: 15px;
     width: 150px;
 }
 
 .skill-js img:hover {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 }
 
 .skill-github img {
     width: 150px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 0px;
+    border-radius: 15px;
 }
 
 .skill-github img:hover {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 }
 
 footer {
@@ -206,6 +218,7 @@ footer {
 }
 
 .footer-text p{
+    font-family: "EB Garamond", serif;
     text-decoration: underline;
     text-align: center;
     padding-bottom: 10px;
@@ -245,6 +258,16 @@ footer {
     width: 40px;
     height: 40px;
 }
-.dark {
-    background: linear-gradient(90deg, 	white 38%, #00FFFF 38%);
+.lightheader {
+    background: white;
+    color:black;
+}
+.lightinfo a{
+    color: black;
+}
+.lighttitle {
+    color: #0B2D43;
+}
+.lightp p{
+    color: black;
 }
